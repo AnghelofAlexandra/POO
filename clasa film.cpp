@@ -49,7 +49,7 @@ public:
 
 			this->nrActori = k;
 			this->onorariiActori = new float[k];
-			for (int i = 0; i < _nrActori; i++)
+			for (int i = 0; i < k; i++)
 			{
 
 				this->onorariiActori[i] = aux[i];
@@ -105,4 +105,5 @@ int main()
 	cout << "\nBuget: " << f2.bugetTotal();
 
 	return 0;
+
 }
