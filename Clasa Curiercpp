@@ -17,6 +17,21 @@ enum tipLivrare
 	ACASA, EASYBOX
 };
 
+string transformare(tipLivrare tip)
+{
+	switch (tip)
+	{
+	case 0:
+		return "ACASA";
+		break;
+	case 1:
+		return "EASYBOX";
+		break;
+	default:
+		break;
+	}
+}
+
 class Curier
 {
 	string numeCurier = "anonim";
@@ -112,7 +127,7 @@ public:
 			cout << this->distantaPerLivrare[i] << "   ";
 		}
 		cout << "; Distanta maxima: " << this->distantaMaxima;
-		cout << "; Tip livrare: " << this->tip;
+		cout << "; Tip livrare: " << transformare(this->tip);
 	}
 };
 
